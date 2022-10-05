@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  width: -webkit-fill-available;
+  height: 10px;
+  display: flex;
+  background-color: #bcb2ca;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: #080107;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: beige;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:#bcb2ca;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #bcb2ca;
+  background:#bcb2ca;
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  nav{
+    height: 40px;
+    width: -webkit-fill-available;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background:#bcb2ca;
+    top: 0;
+    right: -210px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav.fa {
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  
+}
+
+.ptxt {
+  background-image: url("https://source.unsplash.com/2000x700/?solar panel");
+  z-index: 3;
+  color: #f7f0f5;
+  padding: 70px;
+  padding-top: 40px;
+  display: flex;
+}
+.ptxt:hover{
+  animation: pulsate .30000s ease-in-out infinite;
+}
+@keyframes pulsate{
+  0%{
+    background-image: url("https://source.unsplash.com/2000x700/?solar panel");
+  }
+  100%{
+    background-image: url("https://source.unsplash.com/2000x700/?solar panel");
+  }
+}
+ .ptxt1 h1 {
+  font-size: 90px;
+  font-weight: 600;
+  }
+
+.ptxt4 {
+  text-decoration: noun;
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 500;
+  border: 1px solid rgb(255, 255, 255);
+  color: #f8eef6;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin: 3% 0 1%;
+  transform: padding 0.5s;
+  z-index: 3;
+}
+
+.ptxt4:hover {
+  padding: 15px 20px;
+}
+.ptxt5 {
+  z-index: 3;
+  text-decoration: noun;
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 500;
+  background: #fff;
+  color: #080107;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin: 3% 0 1%;
+  transition: padding 0.5s;
+}
+
+.ptxt5:hover {
+  padding: 15px 20px;
+}
+
+@media (max-width: 700px) {
+  .ptxt {
+    color: #f7f0f5;
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+  }
+  .ptxt1 h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .ptxt4 {
+    text-decoration: noun;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: 500;
+    border: 1px solid rgb(255, 255, 255);
+    color: #f8eef6;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin: 3% 0 1%;
+    transform: padding 0.5s;
+    z-index: 3;
+  }
+
+  .ptxt4:hover {
+    padding: 15px 20px;
+  }
+  .ptxt5 {
+    z-index: 3;
+    text-decoration: noun;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: 500;
+    background: #fff;
+    color: #080107;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin: 3% 0 1%;
+    transition: padding 0.5s;
+  }
+  .ptxt5:hover {
+    padding: 15px 20px;
+  }
+}
+
+
+.div {
+  margin-top: 60px;
+  display: flex;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.div2 {
+  background-color:#bcb2ca;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.div2 h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.div2 p {
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: -6;
+}
+
+#r {
+  margin-left: 10px;
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+}
+#l {
+  margin-right: 10px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+@media (max-width: 700px) {
+  .div1 {
+    display: none;
+  }
+  .div {
+    padding-bottom: 20px;
+  }
+  .div2 {
+    background-color:#bcb2ca;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .div2 h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .div2 p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 10;
+    padding-bottom: 10px;
+  }
+  #r {
+    margin-left: 20px;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+  }
+  #l {
+    margin-right: 20px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+}
+.container{
+  background-image: url("https://source.unsplash.com/1200x600/?solar panel");
+}
+.register .nav-tabs .nav-link:hover{
+  border: none;
+}
+.text-align{
+  margin-top: -3%;
+  margin-bottom: -9%;
+
+  padding: 10%;
+  margin-left: 30%;
+}
+.form-new{
+  margin-right: 22%;
+  margin-left: 20%;
+}
+.register-heading{
+  margin-left: 21%;
+  margin-bottom: 10%;
+  color: #e9ecef;
+}
+.register-heading h1{
+  margin-left: 21%;
+  margin-bottom: 10%;
+  color: #e9ecef;
+}
+.register{
+ 
+  margin-top: 3%;
+  padding: 3%;
+  border-radius: 2.5rem;
+}
+.btnSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #03612e;
+  border: none;
+  cursor: pointer;
+  margin-right: 6%;
+  color: rgb(246, 246, 252);
+  margin-top: 4%;
+}

@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ap.css">
+        
+</head>
+<body>
+
+<nav>
+    <a href="index.html"><h1>DSR</h1></a>
+    <div class="nav-links" id="navLinks">
+        
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index">Home</a></li>
+        </ul>
+    </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="ptxt">
+            <div class="ptxt1">
+               <h1>Everything can <br> be saved</h1>
+               <p>Yes! And you know who can save the planet? You! Each one of us holds the power to make the change needed and make the world a better place.</p>
+               <a href="https://wa.me/917536035890?text="class="ptxt5">Know More</a>
+               <a href="https://wa.me/917536035890?text="class="ptxt4">Know More </a>
+            </div>
+          </div> 
+          
+          <body>
+
+            <div class="container register">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">     </h3>
+                                
+                                <div class="row register-form">
+                                    <div class="col-md-12">
+                                        <form method="post" autocomplete="off" name="google-sheet">
+                                           
+                                            <div class="form-group">
+                                                full name
+                        <input type="text" name="full name" class="form-control" placeholder="full name *" value="" required=""/>
+                                            </div>
+                                            <div class="form-group">
+                                                mail
+                                                <input type="email" name="mail" class="form-control" placeholder="mail *" value="" required=""/>
+                                             </div>
+                                             <div class="form-group">
+                                                phone number
+                                                <input type="number" name="phone number" class="form-control" placeholder="phone number *" value="" required=""/>
+                                             </div>
+                                             <div class="form-group">
+                                                your insights/Suggestions/ideas to make a better tommorow
+                                                <input type="text" name="your insights/Suggestions/ideas to make a better tommorow" class="form-control" placeholder="your insights/Suggestions/ideas to make a better tommorow *" value="" required="" />
+                                             </div>                  
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
+                             </div>
+                                            
+                                        </form>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="div">
+       
+        <div class="div1">
+            <img src="https://source.unsplash.com/400x400/?solar panel" style="
+    border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+" >
+        </div>
+        <div class="div2" id="r">
+           <h1>What is DSR PRODUCTS</h1>
+           <p>xyx klklsd snvksld nios jnvojd kvndskj jvsdbv jsvdbjv jsvbsjkdbkds vjbvjdbsv jvbsdjbvjdsb jvkbsdjvbjsd vjbvjsjkvb vjkbvj vn vkjbvjbv sk vkjsbvjkbsjb  hrehiuhui vuiuie uiubvhbfhv fn vnf f  dfnv fdn vdfbvh vn fv hjv nbv vbfkjvfknv fkjv kjfvjkd kvrevje vke rhg eh</p>
+        </div>
+     </div>
+     <div class="div">
+        <div class="div2" id="l">
+            <h1>What we are doing</h1>
+            <p>xyx klklsd snvksld nios jnvojd kvndskj jvsdbv jsvdbjv jsvbsjkdbkds vjbvjdbsv jvbsdjbvjdsb jvkbsdjvbjsd vjbvjsjkvb vjkbvj vn vkjbvjbv sk vkjsbvjkbsjb  hrehiuhui vuiuie uiubvhbfhv fn vnf f  dfnv fdn vdfbvh vn fv hjv nbv vbfkjvfknv fkjv kjfvjkd kvrevje vke rhg eh</p>
+         </div>
+        <div class="div1">
+            <img src="https://source.unsplash.com/400x400/?doing" style="
+    border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+" >
+        </div>
+        
+     </div>
+     <div class="div">
+        <div class="div1">
+            <img src="https://source.unsplash.com/400x400/?Aim" style="
+    border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+">
+        </div>
+        <div class="div2" id="r">
+           <h1>Our Aim</h1>
+           <p>xyx klklsd snvksld nios jnvojd kvndskj jvsdbv jsvdbjv jsvbsjkdbkds vjbvjdbsv jvbsdjbvjdsb jvkbsdjvbjsd vjbvjsjkvb vjkbvj vn vkjbvjbv sk vkjsbvjkbsjb  hrehiuhui vuiuie uiubvhbfhv fn vnf f  dfnv fdn vdfbvh vn fv hjv nbv vbfkjvfknv fkjv kjfvjkd kvrevje vke rhg eh</p>
+        </div>
+     </div>
+   
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwsnMuHaL8RXYd2-sE12D1FrKoHCzNkRJNbtEPJe2VM1dg71-fhV1PBDgSAVlZ1IwSmMQ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..." + url))
+            .catch(error => console.error('Error!', error.message))
+            window.location.href = 'https://script.google.com/macros/s/AKfycbzPzVwqtKwEYVvyVWYvTGEelUw4gzg410aSlFk9mQ3n/dev';
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </body>
+</html>
