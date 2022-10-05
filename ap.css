@@ -7,23 +7,12 @@
 
 .ptxt {
   background-image: url("https://source.unsplash.com/2000x700/?solar panel");
-  z-index: 3;
   color: #f7f0f5;
   padding: 70px;
   padding-top: 40px;
   display: flex;
 }
-.ptxt:hover{
-  animation: pulsate .30000s ease-in-out infinite;
-}
-@keyframes pulsate{
-  0%{
-    background-image: url("https://source.unsplash.com/2000x700/?solar panel");
-  }
-  100%{
-    background-image: url("https://source.unsplash.com/2000x700/?solar panel");
-  }
-}
+
  .ptxt1 h1 {
   font-size: 90px;
   font-weight: 600;
